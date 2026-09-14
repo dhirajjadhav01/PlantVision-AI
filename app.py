@@ -283,6 +283,94 @@ st.markdown("""
 }
 
 /* =========================================================
+   FINAL TEXT COLOR OVERRIDES
+   ========================================================= */
+
+/* Sidebar navigation: force button text and every nested element to white. */
+[data-testid="stSidebar"] button,
+[data-testid="stSidebar"] button *,
+[data-testid="stSidebar"] .stButton button,
+[data-testid="stSidebar"] .stButton button *,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] *,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] div {
+    color: #ffffff !important;
+}
+
+[data-testid="stSidebar"] .stButton > button {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+[data-testid="stSidebar"] .stButton > button div,
+[data-testid="stSidebar"] .stButton > button p,
+[data-testid="stSidebar"] .stButton > button span {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Keep the sidebar secondary text readable. */
+[data-testid="stSidebar"] .brand p {
+    color: #d9eee0 !important;
+}
+[data-testid="stSidebar"] .sidebar-label,
+[data-testid="stSidebar"] .sidebar-panel .row,
+[data-testid="stSidebar"] .nav-note {
+    color: #c9dfd0 !important;
+}
+[data-testid="stSidebar"] .sidebar-panel .value {
+    color: #ffffff !important;
+}
+
+/* Hero: every piece of hero text is white. */
+.hero,
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6,
+.hero p,
+.hero span,
+.hero div {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Main Streamlit markdown headings and text. */
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] h1,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] h2,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] h3,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] h4,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] h5,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] h6 {
+    color: #173c29 !important;
+}
+
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] li,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] strong,
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] b {
+    color: #26352d !important;
+}
+
+/* Custom subtitle/muted text remains dark on the light main background. */
+.muted {
+    color: #4d6155 !important;
+}
+
+/* Buttons outside the sidebar. */
+[data-testid="stButton"] button,
+[data-testid="stButton"] button *,
+[data-testid="stDownloadButton"] button,
+[data-testid="stDownloadButton"] button * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* =========================================================
    MOBILE RESPONSIVE FIX
    ========================================================= */
 @media (max-width: 768px) {
