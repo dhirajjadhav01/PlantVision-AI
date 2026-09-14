@@ -784,7 +784,7 @@ with st.sidebar:
             </div>
             <div>
                 <h1>PlantVision AI</h1>
-                <p>Computer Vision Intelligence</p>
+                <p>Detect Early. Act Smart. Grow Better.</p>
             </div>
         </div>
     </div>
@@ -821,7 +821,7 @@ with st.sidebar:
 st.markdown("""
 <div class="hero">
     <h1>🌿 PlantVision AI</h1>
-    <p class="hero-tagline">Detect Early. Act Smart. Grow Better.</p>
+    <p class="hero-tagline">Deep-learning-based tomato leaf disease detection with explainable predictions.</p>
     <span class="tag">MobileNetV2</span>
     <span class="tag">Image Classification</span>
     <span class="tag">Transfer Learning</span>
