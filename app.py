@@ -311,6 +311,34 @@ st.markdown("""
     -webkit-text-fill-color: #ffffff !important;
 }
 
+/* FINAL SIDEBAR BUTTON TEXT FIX - Streamlit nested elements */
+[data-testid="stSidebar"] [data-testid="stButton"] button,
+[data-testid="stSidebar"] [data-testid="stButton"] button p,
+[data-testid="stSidebar"] [data-testid="stButton"] button span,
+[data-testid="stSidebar"] [data-testid="stButton"] button div,
+[data-testid="stSidebar"] [data-testid="stButton"] button label {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stButton"] button:hover,
+[data-testid="stSidebar"] [data-testid="stButton"] button:hover p,
+[data-testid="stSidebar"] [data-testid="stButton"] button:hover span {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Hero tagline - always visible on the dark hero background */
+.hero .hero-tagline,
+.hero p.hero-tagline {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.18) !important;
+}
+
 /* Keep the sidebar secondary text readable. */
 [data-testid="stSidebar"] .brand p {
     color: #d9eee0 !important;
@@ -793,7 +821,7 @@ with st.sidebar:
 st.markdown("""
 <div class="hero">
     <h1>🌿 PlantVision AI</h1>
-    <p>Deep-learning-based tomato leaf disease detection with explainable predictions.</p>
+    <p class="hero-tagline">Detect Early. Act Smart. Grow Better.</p>
     <span class="tag">MobileNetV2</span>
     <span class="tag">Image Classification</span>
     <span class="tag">Transfer Learning</span>
