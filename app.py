@@ -147,7 +147,8 @@ st.markdown("""
 .hero p {
     font-size: 17px;
     margin: 0;
-    opacity: .9;
+    color: #ffffff !important;
+    opacity: 1;
 }
 .tag {
     display:inline-block;
