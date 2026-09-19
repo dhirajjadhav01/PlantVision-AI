@@ -16,6 +16,9 @@ PlantVision AI is a Deep Learning based plant disease detection system developed
 - Agricultural decision-support summary
 - Streamlit web interface
 
+<img width="734" height="358" alt="image" src="https://github.com/user-attachments/assets/2bbb640f-2157-4ba6-a27f-b5702ea3731f" />
+
+
 ## Model
 
 The system uses MobileNetV2 with transfer learning.
@@ -29,6 +32,10 @@ Classes:
 
 Best validation accuracy: 95.11%
 
+<img width="734" height="403" alt="image" src="https://github.com/user-attachments/assets/c93a8805-a738-45d6-81dc-cddf86d98d07" />
+<img width="734" height="404" alt="image" src="https://github.com/user-attachments/assets/e9129d76-b38e-4df6-b556-608b06735abd" />
+
+
 ## Technologies
 
 - Python
@@ -39,3 +46,5 @@ Best validation accuracy: 95.11%
 - Pandas
 - Pillow
 - Streamlit
+
+  
