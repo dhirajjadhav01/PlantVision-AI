@@ -2,6 +2,9 @@
 
 PlantVision AI is a Deep Learning based plant disease detection system developed using TensorFlow, MobileNetV2 and Streamlit.
 
+<img width="958" height="451" alt="image" src="https://github.com/user-attachments/assets/057c02a1-aef6-457a-bc9b-4cad3f5f4807" />
+
+
 ## Features
 
 - Tomato leaf disease classification
